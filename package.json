@@ -1,0 +1,35 @@
+{
+  "name": "holywagyu",
+  "version": "1.0.0",
+  "description": "test",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "parcel src/*.html -p 1234 --open",
+    "clean": "rm -rf dist/*",
+    "build:parcel": "parcel build src/*.html --public-url /team-project-js-filmoteka/",
+    "build": "npm run clean && npm run build:parcel"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sla6ak/holywagyu.git"
+  },
+  "author": "slabakxaker@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sla6ak/holywagyu/issues"
+  },
+  "homepage": "https://github.com/sla6ak/holywagyu",
+  "svgSpriteOptions": {
+    "include": [
+      "src/**/*"
+    ]
+  },
+  "devDependencies": {
+    "parcel": "^2.8.3",
+    "parcel-packager-svg-sprite": "^2.0.0",
+    "parcel-plugin-svg-sprite": "^1.4.1",
+    "parcel-transformer-svg-sprite": "^2.0.0",
+    "sass": "^1.58.1"
+  }
+}

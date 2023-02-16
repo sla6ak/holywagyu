@@ -4,6 +4,7 @@
   "description": "test",
   "source": "src/index.html",
   "scripts": {
+    "start": "parcel dist/*.html -p 1234 --open",
     "dev": "parcel src/*.html -p 1234 --open",
     "clean": "rm -rf dist/*",
     "build:parcel": "parcel build src/*.html",
@@ -19,20 +20,10 @@
     "url": "https://github.com/sla6ak/holywagyu/issues"
   },
   "homepage": "https://github.com/sla6ak/holywagyu",
-  "svgSpriteOptions": {
-    "include": [
-      "src/**/*"
-    ]
-  },
-  "devDependencies": {},
-  "dependencies": {
+  "devDependencies": {
     "@parcel/transformer-sass": "^2.8.3",
-    "cssnano": "^4.1.11",
     "parcel": "^2.8.3",
     "parcel-packager-svg-sprite": "^2.0.0",
-    "parcel-plugin-svg-sprite": "^1.4.1",
-    "parcel-transformer-svg-sprite": "^2.0.0",
-    "sass": "^1.58.1",
-    "@shopify/draggable": "^1.0.0-beta.8"
+    "parcel-transformer-svg-sprite": "^2.0.0"
   }
 }

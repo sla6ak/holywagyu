@@ -4,11 +4,8 @@
   "description": "test",
   "source": "src/index.html",
   "scripts": {
-    "start": "parcel dist/*.html -p 1234 --open",
     "dev": "parcel src/*.html -p 1234 --open",
-    "clean": "rm -rf dist/*",
-    "build:parcel": "parcel build src/*.html",
-    "build": "npm run clean && npm run build:parcel"
+    "build": "parcel build src/*.html"
   },
   "repository": {
     "type": "git",

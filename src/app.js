@@ -3,28 +3,51 @@ const noRoast = document.getElementById('no-roast')
 const roast = document.getElementById('roast')
 const backdropButton = document.getElementById('backdrop-button')
 const dragableConteiner = document.getElementById('dragable-conteiner')
-
-console.log(backdropButton.x, backdropButton.y)
-const startPositionX = backdropButton.x
-const startPositionY = backdropButton.y
+const zonered = document.getElementById('zonered')
+const zoneblack = document.getElementById('zoneblack')
 
 backdropButton.addEventListener('dragstart', dragstart1)
+backdropButton.addEventListener('drag', drag)
 backdropButton.addEventListener('dragend', dragend1)
 
 function dragstart1(event) {
-  roast.classList.add('active-res')
-  noRoast.classList.add('active-no-res')
-  roast.style.top = '20px'
-  console.log(roast.style)
+  zonered.addEventListener('dragenter', ondragenterred)
+  zoneblack.addEventListener('dragenter', ondragenterblack)
+  zonered.addEventListener('dragleave', ondragdragleavered)
+  zoneblack.addEventListener('dragleave', ondragdragleaveblack)
   setTimeout(() => event.target.classList.add('none'), 0)
 }
-function dragend1(event) {
-  roast.classList.remove('active-res')
-  noRoast.classList.remove('active-no-res')
 
+function drag(event) {
+  console.log('st', zonered.dragenter, zoneblack.dragenter)
+  setTimeout(() => event.target.classList.add('none'), 0)
+}
+
+function dragend1(event) {
+  roast.classList.remove('active-res-black')
+  noRoast.classList.remove('active-no-res-black')
+  roast.classList.remove('active-res-red')
+  noRoast.classList.remove('active-no-red')
   event.target.classList.remove('none')
 }
 
-dragableConteiner.addEventListener('mousemove', (event) => {
-  console.log('mousemove', event.clientX, event.clientY)
-})
+function ondragenterred(event) {
+  console.log('+r')
+  roast.classList.add('active-res-red')
+  noRoast.classList.add('active-no-res-red')
+}
+function ondragenterblack(event) {
+  console.log('+b')
+  roast.classList.add('active-res-black')
+  noRoast.classList.add('active-no-res-black')
+}
+function ondragdragleavered(event) {
+  console.log('-r')
+  roast.classList.remove('active-res-red')
+  noRoast.classList.remove('active-no-res-red')
+}
+function ondragdragleaveblack(event) {
+  console.log('-b')
+  roast.classList.remove('active-res-black')
+  noRoast.classList.remove('active-no-res-black')
+}

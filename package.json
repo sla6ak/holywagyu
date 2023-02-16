@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "parcel src/*.html -p 1234 --open",
     "clean": "rm -rf dist/*",
-    "build:parcel": "parcel build src/*.html --public-url /team-project-js-filmoteka/",
+    "build:parcel": "parcel build src/*.html",
     "build": "npm run clean && npm run build:parcel"
   },
   "repository": {

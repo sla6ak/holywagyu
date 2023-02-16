@@ -595,6 +595,7 @@ a {
   .backdrop_img-red {
     width: 427px;
     height: 293px;
+    transform: translate(0%, 50%);
   }
 }
 @media screen and (min-width: 768px) {
@@ -630,6 +631,7 @@ a {
   .backdrop_img-black {
     width: 427px;
     height: 293px;
+    transform: translate(0%, -50%);
   }
 }
 @media screen and (min-width: 768px) {
@@ -654,32 +656,60 @@ a {
   }
 }
 
+.js-roast {
+  position: relative;
+}
+
+.js-no-roast {
+  position: relative;
+}
+
 .none {
   opacity: 0;
 }
 
 .active-res-red {
-  transform: translateX(0%);
+  transform: translateY(0%);
   transition-duration: 300ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 768px) {
+  .active-res-red {
+    transform: translateX(0%);
+  }
 }
 
 .active-no-res-red {
-  transform: translateX(-100%);
+  transform: translateY(-100%);
   transition-duration: 300ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 768px) {
+  .active-no-res-red {
+    transform: translateX(-100%);
+  }
 }
 
 .active-res-black {
-  transform: translateX(100%);
+  transform: translateY(100%);
   transition-duration: 300ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+@media screen and (min-width: 768px) {
+  .active-res-black {
+    transform: translateX(100%);
+  }
+}
 
 .active-no-res-black {
-  transform: translateX(0%);
+  transform: translateY(0%);
   transition-duration: 300ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 768px) {
+  .active-no-res-black {
+    transform: translateX(0%);
+  }
 }
 
 /*# sourceMappingURL=/main.39afc03c.css.map */

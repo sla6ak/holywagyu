@@ -1,4 +1,3 @@
-import { Draggable } from '@shopify/draggable'
 const noRoast = document.getElementById('no-roast')
 const roast = document.getElementById('roast')
 const backdropButton = document.getElementById('backdrop-button')
@@ -32,22 +31,18 @@ function dragend1(event) {
 }
 
 function ondragenterred(event) {
-  console.log('+r')
   roast.classList.add('active-res-red')
   noRoast.classList.add('active-no-res-red')
 }
 function ondragenterblack(event) {
-  console.log('+b')
   roast.classList.add('active-res-black')
   noRoast.classList.add('active-no-res-black')
 }
 function ondragdragleavered(event) {
-  console.log('-r')
   roast.classList.remove('active-res-red')
   noRoast.classList.remove('active-no-res-red')
 }
 function ondragdragleaveblack(event) {
-  console.log('-b')
   roast.classList.remove('active-res-black')
   noRoast.classList.remove('active-no-res-black')
 }

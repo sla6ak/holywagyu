@@ -2,9 +2,8 @@
   "name": "holywagyu",
   "version": "1.0.0",
   "description": "test",
-  "main": "index.js",
+  "main": "index.html",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "parcel src/*.html -p 1234 --open",
     "clean": "rm -rf dist/*",
     "build:parcel": "parcel build src/*.html",

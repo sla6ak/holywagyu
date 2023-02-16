@@ -88,11 +88,35 @@
         </svg>
       </section>
       <section class="holy">
-        <div class="holy_background" id="dragable">
-          <div class="backdrop_button" id="backdrop-button"></div>
+        <div class="holy_background" id="dragable-conteiner">
+          <img
+            class="backdrop_button"
+            id="backdrop-button"
+            draggable="true"
+            src="./images/Group2.png"
+            width="62"
+            height="43"
+            alt="roast"
+          />
+          <!-- <picture>
+            <source
+              srcset="./images/Group2.png"
+              media="(min-width:1200px)"
+              type="image/png"
+            />
+            <img
+              class="backdrop_button"
+              draggable="true"
+              src="./images/Group2(1).png"
+              width="62"
+              height="43"
+              alt="roast"
+            />
+          </picture> -->
           <div class="holy_red background-red">
             <img
-              class="backdrop_img-red"
+              id="roast"
+              class="backdrop_img-red js-roast"
               src="./images/raw-wagyu-shoulder-roast.png"
               width="629px"
               height="431px"
@@ -101,7 +125,8 @@
           </div>
           <div class="holy_black background-black">
             <img
-              class="backdrop_img-black"
+              id="no-roast"
+              class="backdrop_img-black js-no-roast"
               src="./images/2raw-wagyu-shoulder.png"
               width="629px"
               height="431px"

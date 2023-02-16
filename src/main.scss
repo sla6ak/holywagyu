@@ -48,3 +48,25 @@ a {
 
 // backDrop
 @import './sass/backdrop.scss';
+
+.js-roast {
+}
+.js-no-roast {
+}
+
+.none {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+.active-res {
+  transform: translateX(0%);
+  transition-duration: 300ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.active-no-res {
+  transform: translateX(0%);
+  transition-duration: 300ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}

@@ -18,7 +18,6 @@ function dragstart1(event) {
 }
 
 function drag(event) {
-  console.log('st', zonered.dragenter, zoneblack.dragenter)
   setTimeout(() => event.target.classList.add('none'), 0)
 }
 

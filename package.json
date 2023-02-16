@@ -4,8 +4,8 @@
   "description": "test",
   "source": "src/index.html",
   "scripts": {
-    "dev": "parcel src/*.html -p 1234 --open",
-    "build": "parcel build src/*.html"
+    "dev": "parcel src/index.html -p 1234 --open",
+    "build": "parcel build src/index.html"
   },
   "repository": {
     "type": "git",

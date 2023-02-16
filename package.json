@@ -2,7 +2,6 @@
   "name": "holywagyu",
   "version": "1.0.0",
   "description": "test",
-  "main": "index.js",
   "scripts": {
     "dev": "parcel src/*.html -p 1234 --open",
     "clean": "rm -rf dist/*",

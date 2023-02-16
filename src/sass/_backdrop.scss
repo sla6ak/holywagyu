@@ -1,0 +1,75 @@
+.backdrop_button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 100;
+  transform: translate(-50%, -50%);
+  background-color: rgb(255, 255, 255);
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  @media screen and (min-width: 768px) {
+    width: 34px;
+    height: 34px;
+  }
+  @media screen and (min-width: 1000px) {
+    width: 41px;
+    height: 41px;
+  }
+  @media screen and (min-width: 1440px) {
+    width: 53px;
+    height: 53px;
+  }
+}
+.backdrop_img-red {
+  width: 331px;
+  height: 227px;
+  pointer-events: none;
+  z-index: 5;
+  transform: translate(0%, 50%);
+  @media screen and (min-width: 480px) {
+    width: 427px;
+    height: 293px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 329px;
+    height: 226px;
+    transform: translate(50%, 0%);
+  }
+  @media screen and (min-width: 1000px) {
+    width: 486px;
+    height: 333px;
+    transform: translate(50%, 0%);
+  }
+  @media screen and (min-width: 1440px) {
+    width: 629px;
+    height: 431px;
+    transform: translate(50%, 0%);
+  }
+}
+.backdrop_img-black {
+  width: 331px;
+  height: 227px;
+  z-index: 5;
+  pointer-events: none;
+  transform: translate(0%, -50%);
+  @media screen and (min-width: 480px) {
+    width: 427px;
+    height: 293px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 329px;
+    height: 226px;
+    transform: translate(-50%, 0%);
+  }
+  @media screen and (min-width: 1000px) {
+    width: 486px;
+    height: 333px;
+    transform: translate(-50%, 0%);
+  }
+  @media screen and (min-width: 1440px) {
+    width: 629px;
+    height: 431px;
+    transform: translate(-50%, 0%);
+  }
+}

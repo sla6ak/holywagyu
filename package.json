@@ -2,7 +2,7 @@
   "name": "holywagyu",
   "version": "1.0.0",
   "description": "test",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "parcel src/*.html -p 1234 --open",
@@ -31,5 +31,8 @@
     "parcel-plugin-svg-sprite": "^1.4.1",
     "parcel-transformer-svg-sprite": "^2.0.0",
     "sass": "^1.58.1"
+  },
+  "dependencies": {
+    "@shopify/draggable": "^1.0.0-beta.8"
   }
 }

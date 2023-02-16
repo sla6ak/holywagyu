@@ -4,6 +4,10 @@ body {
   justify-content: center;
   color: #1f2a37;
 }
+* {
+  margin: 0;
+  padding: 0;
+}
 li {
   list-style: none;
 }
@@ -38,6 +42,9 @@ a {
 
 /* section one */
 @import './sass/_categories.scss';
-/* section two */
 
+/* section two */
 @import './sass/holy.scss';
+
+// backDrop
+@import './sass/backdrop.scss';

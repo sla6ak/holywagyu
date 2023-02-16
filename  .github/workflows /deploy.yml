@@ -2,7 +2,7 @@ name: Build and deploy to GitHub Pages
 
 on:
   push:
-    branches: [main]
+    branches: [dev, master, main, vik]
 
 jobs:
   build-and-deploy:
@@ -13,6 +13,7 @@ jobs:
 
       - name: Install and Build 🔧
         run: |
+        npm install
           npm run build
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@4.1.0
